@@ -1,15 +1,26 @@
 const RECORDS = [
     {
-        "id": 1,
-        "item": "hair-dryer",
-        "name": "Shannon",
+        id: 0,
+        item: 'hairdryer',
+        name: 'John Doe',
+        phone: '9715551234',
+        date: '2023-01-13',
+        itemPic: null,
+        description: 'hairdryer',
+        returnDate: null,
+        returned: false
     },
     {
-        "id": 2,
-        "item": "$10 cash",
-        "name": "Brenda"
+        id: 1,
+        item: 'curling iron',
+        name: 'Jane Doe',
+        phone: '9715556789',
+        date: '2023-01-11',
+        itemPic: null,
+        description: 'curling iron',
+        returnDate: null,
+        returned: true
     }
 ];
-
 
 export default RECORDS;
