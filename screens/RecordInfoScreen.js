@@ -2,9 +2,11 @@ import RenderRecord from '../features/records/RenderRecord';
 
 
 
-const RecordInfoScreen = (props) => {
+const RecordInfoScreen = ({route}) => {
+    const {record} = route.params;
+
     return (
-        <RenderRecord  record={props.record} />
+        <RenderRecord  record={record} />
     );
 };
 
