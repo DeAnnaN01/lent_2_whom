@@ -14,8 +14,15 @@ const DirectoryScreen = ({navigation}) => {
         return (
             <ListItem onPress={() => navigation.navigate('RecordInfo', {record})} >
                 <ListItem.Content>
-                    <ListItem.Title>{record.item}</ListItem.Title>
-                    <ListItem.Subtitle>{record.name}</ListItem.Subtitle>
+                    <ListItem.Title>
+                        ◄ № {record.id} ►
+                    </ListItem.Title>
+                    <ListItem.Title style={{marginLeft: 5, color: 'purple'}} >
+                        {record.item}
+                    </ListItem.Title>
+                    <ListItem.Subtitle style={{marginLeft: 15}} >
+                        {record.name}
+                    </ListItem.Subtitle>
                 </ListItem.Content>
             </ListItem>
         )
